@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jalga.kz - Тұрмыстық заттарды жалға беру</title>
+    <style>
+        /* Жалпы стильдер */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+        header {
+            background-color: #3498db; /* Көк түс */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        header .university {
+            font-size: 0.8em;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            display: none;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        section.active {
+            display: block;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            text-align: center;
+            max-width: 600px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-info {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Jalga.kz</h1>
+        <p>Тұрмыстық заттарды оңай жалға алыңыз!</p>
+        <div class="university">YESSENOV UNIVERSITY</div>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showSection('home')">Басты бет</a>
+        <a href="#" onclick="showSection('about')">Біз туралы</a>
+        <a href="#" onclick="showSection('contact')">Байланыс</a>
+    </nav>
+
+    <!-- Басты бет -->
+    <section id="home" class="active">
+        <h2>Жалға берілетін заттар</h2>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Vacuum_cleaner.jpg" alt="Шаңсорғыш">
+            <h3>Шаңсорғыш</h3>
+            <p>Бағасы: 10000 тг/күн</p>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Gas_stove.jpg" alt="Газ плитасы">
+            <h3>Газ плитасы</h3>
+            <p>Бағасы: 15000 тг/күн</p>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Refrigerator.jpg" alt="Тоңазытқыш">
+            <h3>Тоңазытқыш</h3>
+            <p>Бағасы: 20000 тг/күн</p>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Evening_dress.jpg" alt="Салтанатты көйлек">
+            <h3>Салтанатты көйлек</h3>
+            <p>Бағасы: 10000 тг/күн</p>
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Overalls.jpg" alt="Оверсайз костюм">
+            <h3>Оверсайз костюм</h3>
+            <p>Бағасы: 15000 тг/күн</p>
+        </div>
+    </section>
+
+    <!-- Біз туралы -->
+    <section id="about">
+        <h2>Біз туралы</h2>
+        <div class="card">
+            <p>Jalga.kz — тұрмыстық заттарды жалға беру қызметін ұсынатын платформа. Біз сізге қажетті құралдарды оңай, тиімді және қолжетімді түрде алуға көмектесеміз. Біз тек тұрмыстық заттарды ғана емес, сондай-ақ киімдерді де жалға береміз.</p>
+            <p>Біздің команда: <br>Нұрасыл Мурзамухамед, Меруерт Алтынбекова, Нұршат Дүзелбаева, Райымбек Шамек, Рахат Тағабердиев</p>
+        </div>
+    </section>
+
+    <!-- Байланыс -->
+    <section id="contact">
+        <h2>Байланыс</h2>
+        <div class="contact-info">
+            <p>Бізбен байланысу үшін:</p>
+            <p><strong>8 707 200 6470</strong></p>
+            <p><strong>8 777 068 1625</strong></p>
+            <p><strong>8 777 899 4558</strong></p>
+            <p><strong>8 702 946 1805</strong></p>
+            <p><strong>8 702 923 2243</strong></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jalga.kz. Барлық құқықтар қорғалған.</p>
+    </footer>
+</body>
+</html>
